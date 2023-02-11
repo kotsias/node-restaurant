@@ -1,0 +1,781 @@
+{
+	"info": {
+		"_postman_id": "0a292654-75dc-4efc-99c7-b813e46e20e1",
+		"name": "NodeRestaurant",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2626096"
+	},
+	"item": [
+		{
+			"name": "GetAllProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/product",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllCategories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/category",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllMainDishes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/category",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllAppetizers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/category/63e05cedf8fe28adecef740f",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"category",
+						"63e05cedf8fe28adecef740f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllDrinks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/category/63e05cedf8fe28adecef740f",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"category",
+						"63e05cedf8fe28adecef740f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMerchantOrders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/category",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/product/63e294698246be6dc3fed989",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"product",
+						"63e294698246be6dc3fed989"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMerchant",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/merchant/63e5f7076cfd76b1e0ca0d1b",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"merchant",
+						"63e5f7076cfd76b1e0ca0d1b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddNewMerchant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstname",
+							"value": "Stefanos",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Kotsias",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/merchant",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"merchant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddNewAppetizer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Thai Shrimp Wonton Cups",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "These wonton cups will be the talk of your next party! They only use 8 ingredients, including sweet Thai chili sauce, shrimp, and cream cheese. They turn out tasty and fancy.",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "currency",
+							"value": "EUR",
+							"type": "text"
+						},
+						{
+							"key": "categoryId",
+							"value": "63e05cedf8fe28adecef740f",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/kotsias/OneDrive/My Computer/appet1.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/product",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddNewAppetizer2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "TikTok Candied Kielbasa Bites",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Double-baked in a brown sugar and mustard glaze, these sweet and smoky sausage bites are a crowd-pleasing new take on little smokies.",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "currency",
+							"value": "EUR",
+							"type": "text"
+						},
+						{
+							"key": "categoryId",
+							"value": "63e05cedf8fe28adecef740f",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/kotsias/OneDrive/My Computer/Orange-Glazed-Meatballs.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/product",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddNewAppetizer3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "BBQ Meatball Sliders",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "These BBQ meatball sliders on Hawaiian rolls that will be the hit of the party!  Hearty and full of flavor, this is the perfect heavy starter for a Super Bowl party.  You can easily double or triple the recipe.",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "14",
+							"type": "text"
+						},
+						{
+							"key": "currency",
+							"value": "EUR",
+							"type": "text"
+						},
+						{
+							"key": "categoryId",
+							"value": "63e05cedf8fe28adecef740f",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/kotsias/OneDrive/My Computer/Chili-Garlic-Beef-with-Stir-Fry-Zoodles.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/product",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddNewDrink",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Cosmopolitan",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "currency",
+							"value": "EUR",
+							"type": "text"
+						},
+						{
+							"key": "categoryId",
+							"value": "63e05cd3f8fe28adecef740b",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/kotsias/OneDrive/My Computer/drinks.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/product",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddNewDrink2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Daiquiri",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "currency",
+							"value": "EUR",
+							"type": "text"
+						},
+						{
+							"key": "categoryId",
+							"value": "63e05cd3f8fe28adecef740b",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/kotsias/OneDrive/My Computer/drinks.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/product",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddNewDrink3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Manhattan",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "currency",
+							"value": "EUR",
+							"type": "text"
+						},
+						{
+							"key": "categoryId",
+							"value": "63e05cd3f8fe28adecef740b",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/kotsias/OneDrive/My Computer/drinks.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/product",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddNewDrink4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Manhattan",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "currency",
+							"value": "EUR",
+							"type": "text"
+						},
+						{
+							"key": "categoryId",
+							"value": "63e05cd3f8fe28adecef740b",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/kotsias/OneDrive/My Computer/drinks.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/product",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddNewMainDishes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Chicken and Potatoes with Dijon Cream Sauce",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "18",
+							"type": "text"
+						},
+						{
+							"key": "currency",
+							"value": "EUR",
+							"type": "text"
+						},
+						{
+							"key": "categoryId",
+							"value": "63e05cddf8fe28adecef740d",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/kotsias/OneDrive/My Computer/Persian-Chicken-Jooheh-Kebab.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/product",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddNewMainDishes2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Easy Instant Pot Pot Roast",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "16",
+							"type": "text"
+						},
+						{
+							"key": "currency",
+							"value": "EUR",
+							"type": "text"
+						},
+						{
+							"key": "categoryId",
+							"value": "63e05cddf8fe28adecef740d",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/kotsias/OneDrive/My Computer/Hot-Artichoke-Spinach-Dip.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/product",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddNewMainDishes3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Cajun Shrimp and Rice Skillet",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "currency",
+							"value": "EUR",
+							"type": "text"
+						},
+						{
+							"key": "categoryId",
+							"value": "63e05cddf8fe28adecef740d",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/kotsias/OneDrive/My Computer/Spicy-Pork-Vindaloo.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/product",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddOrUpdateItemsInCart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"merchantId\": \"63e5f7076cfd76b1e0ca0d1b\",\r\n    \"productId\": \"63e79effdeb885621a32a195\",\r\n    \"quantity\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/cart",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EmptyCart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstname",
+							"value": "Stefanos",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Kotsias",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/merchant",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"merchant"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
